@@ -1,0 +1,70 @@
+Title: Proposal for improving Unicode for use with and by Artificial Intelligence.
+
+Introduction and Purpose
+
+This proposal aims to address the need for additional characters and logical functionality to improve efficient technical communication, especially where it involves artificial intelligence.
+
+Part 1: Inclusion of Exponentiation Symbol and Superscript/Subscript Parentheses and Brackets in Unicode
+
+Here we propose the addition of mathematical and grouping symbols, focusing on:
+
+a. An unambiguous and reliable way to logically superscript or subscript an arbitrary string of Unicode characters.
+b. Subscripted opening and closing parentheses as one way of indicating the group of characters to be treated as logically subscripted.
+c. Subscripted opening and closing brackets as another way of indicating the group of characters to be treated as logically subscripted.
+d. Superscripted opening and closing parentheses as one way of indicating the group of characters to be treated as logically superscripted.
+e. Superscripted opening and closing brackets as another way of indicating the group of characters to be treated as logically superscripted.
+f. An unambiguous exponentiation symbol: A dedicated character for exponentiation that can be used universally to avoid confusion with other symbols or operators, representing the inverse of of the operation commonly represented by the radical symbol.
+
+The lack of a standardized unambiguous exponentiation operator character can lead to confusion, misinterpretation, and inconsistency in representing this commonly used and important mathematical operation clearly and concisely across various platforms and disciplines.
+In mathematics, science, and engineering, there is a significant need for clear and concise notation to represent complex ideas and operations. Currently, there is no widely accepted exponentiation symbol in Unicode, leading to the use of various workarounds, such as the caret symbol (^) or double asterisk (**), which can have different meanings in different programming languages and contexts. Such workarounds are fine in a given context where a specific workaround is known, accepted, and expected, but when communicating in general they tend to fall short.
+
+Similarly, there is no consistant way to concisely represent superscript and subscript directly in Unicode, and enclosing text in uuperscripted or subscripted parentheses or brackets would be suffient for representing such things as superscripted or subscripted expressions and indices in mathematical and scientific notation, including nested and compound expressions potentially with nested superscripting and/or nested subscripting. Although Unicode provides a limited range of superscript and subscript characters, the current set lacks a comprehensive and consistent set of parentheses and brackets for this purpose.
+
+Proposed Characters
+The proposed characters to be added to Unicode are:
+
+ⅰ. Superscript opening parenthesis (U+XXXX)
+ⅱ. Superscript closing parenthesis (U+XXXX)
+ⅲ. Subscript opening parenthesis (U+XXXX)
+ⅳ. Subscript closing parenthesis (U+XXXX)
+ⅴ. Superscript opening bracket (U+XXXX)
+ⅵ. Superscript closing bracket (U+XXXX)
+ⅶ. Subscript opening bracket (U+XXXX)
+ⅷ. Subscript closing bracket (U+XXXX)
+ⅸ. Exponentiation symbol (U+XXXX)
+
+Usage and Impact
+The addition of these characters to Unicode will facilitate clearer and more efficient technical communication in various disciplines, including mathematics, physics, chemistry, computer science, and engineering. These characters will enable users to represent complex expressions and notation more accurately and consistently across different platforms and systems.
+
+Conclusion
+The proposed exponentiation symbol and superscript/subscript parentheses and brackets address a critical need in technical communication for consistent and unambiguous representation of mathematical and scientific notation. The addition of these characters to Unicode will have a significant positive impact on the clarity and efficiency of communication in these fields.
+
+Please note that this is a simple early and brief version of a proposal, intended to evolve into something more in-depth including research, examples, character glyph design, and detailed rationale.
+
+It's important to emphasize that the intended Unicode extension would include that enclosing something in a matching pair of the new superscripted parentheses or brackets would signify that what was enclosed was also to be treated as superscripted, and likewise that enclosing something in a matching pair of the new subscripted parentheses or brackets would signify that what was enclosed was also to be treated as subscripted, even if the rendering software does not render those enclosed characters as accordingly superscripted or subscripted. This would of course mean that, for example, enclosing a matching superscripted pair of brackets or parentheses inside of another matching pair of superscripted brackets or parentheses would signify a second logical level of superscripting, even if the rendering software were to be incapable of rendering it in such a way as to visually represent that fact.
+
+There are many areas in which Unicode partially addresses some technical area but falls unnecessarily short. For example, consider the Roman Numeral characters:
+Ⅰ, ⅰ, Ⅱ, ⅱ, Ⅲ, ⅲ, Ⅳ, ⅳ, Ⅴ, ⅴ, Ⅵ, ⅵ, Ⅶ, ⅶ, Ⅷ, ⅷ, Ⅸ, ⅸ, Ⅹ, ⅹ, Ⅺ, ⅺ, Ⅻ, ⅻ, Ⅼ, ⅼ, Ⅽ, ⅽ, Ⅾ, ⅾ, ↀ, Ⅿ, ⅿ, ↁ, ↂ, ↇ, ↈ
+
+Likewise, circled number characters could be used by an AI to internally represent and externally express arbitrary base systems and/or both positive and negative numbers at least within some reasonable range, but the current set could easily be improved.
+
+To improve this Unicode proposal, consider, discuss, and execute at least the following steps:
+
+Review existing Unicode proposals: Familiarize yourself with the format and content of successful proposals. Look for examples that are relevant to your proposed characters. The Unicode Consortium provides guidelines and examples of approved proposals on their website: https://www.unicode.org/consortium/utc-document-styles.html
+
+Assess current usage and demand: Research the need for the proposed characters in different fields, such as mathematics, engineering, and programming. Identify any existing practices or workarounds used to represent these characters, and gather evidence that supports the need for the proposed additions.
+
+Investigate similar characters: Examine the Unicode Standard for any characters that may resemble or serve similar functions to the proposed characters. Consider how your proposed characters might fit into existing categories and subcategories within the Unicode Standard.
+
+Character design: Consult with typographers or font designers to create visual representations of the proposed characters. These designs should be consistent with the Unicode Standard and demonstrate the intended usage of the characters.
+
+Gather supporting evidence: Collect examples of the proposed characters in use, such as textbooks, research papers, or online resources. This evidence will help demonstrate the practical need for the proposed characters.
+
+Consult with experts: Reach out to professionals in relevant fields who might be interested in the proposed characters. Gather their feedback and opinions to strengthen your proposal.
+
+Draft the proposal: Using the research and evidence collected, write a detailed proposal following the Unicode Consortium's guidelines. Be sure to address any potential issues, such as compatibility with existing characters or potential confusion with other symbols.
+
+Revise and submit: Review your proposal thoroughly, making any necessary revisions. Once complete, submit the proposal to the Unicode Consortium for consideration.
+
+Keep in mind that the Unicode Consortium might request additional information, revisions, or clarifications during the review process. The process can take time, so be prepared for an extended period of collaboration and communication with the Unicode Consortium.
+
